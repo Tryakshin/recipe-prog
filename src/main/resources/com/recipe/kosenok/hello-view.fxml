@@ -1,34 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.recipe.kosenok.HelloController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.recipe.kosenok.HelloController">
    <children>
       <AnchorPane layoutX="-1.0" layoutY="92.0" prefHeight="309.0" prefWidth="702.0" style="-fx-background-color: #fafafa;">
          <children>
-            <Button fx:id="create_recipe" layoutX="536.0" layoutY="35.0" mnemonicParsing="false" prefHeight="79.0" prefWidth="127.0" style="-fx-background-color: #F39C63; -fx-border-color: black; -fx-border-radius: 15; -fx-background-radius: 15;" text="Создать  рецепт" textAlignment="CENTER" textFill="#f8f7f7" textOverrun="CLIP" wrapText="true">
+            <Button fx:id="create_recipe" layoutX="537.0" layoutY="115.0" mnemonicParsing="false" prefHeight="79.0" prefWidth="127.0" style="-fx-background-color: #F39C63; -fx-border-color: black; -fx-border-radius: 15; -fx-background-radius: 15;" text="Создать  рецепт" textAlignment="CENTER" textFill="#f8f7f7" textOverrun="CLIP" wrapText="true">
                <font>
                   <Font name="Book Antiqua Bold" size="23.0" />
                </font>
             </Button>
-            <Button fx:id="pick_recipe" layoutX="68.0" layoutY="35.0" mnemonicParsing="false" prefHeight="79.0" prefWidth="127.0" style="-fx-background-color: #F39C63; -fx-border-color: black; -fx-border-radius: 15; -fx-background-radius: 15;" text="Выбор рецепта" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+            <Label alignment="CENTER" layoutX="14.0" layoutY="35.0" prefHeight="42.0" prefWidth="306.0" style="-fx-background-color: #A1EAFB; -fx-border-color: BLACK; -fx-background-radius: 15; -fx-border-radius: 15;" text="Выбор рецепта" textFill="WHITE">
                <font>
-                  <Font name="Book Antiqua Bold" size="23.0" />
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="firstDish" layoutX="14.0" layoutY="89.0" mnemonicParsing="false" style="-fx-background-color: #F39C63; -fx-border-color: BLACK; -fx-background-radius: 15; -fx-border-radius: 15;" text="Первое блюдо" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
                </font>
             </Button>
+            <Button fx:id="secondDish" layoutX="14.0" layoutY="155.0" mnemonicParsing="false" style="-fx-background-color: #F39C63; -fx-border-color: BLACK; -fx-background-radius: 15; -fx-border-radius: 15;" text="Второе блюдо" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font></Button>
+            <Button fx:id="drinks" layoutX="14.0" layoutY="219.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="184.0" style="-fx-background-color: #F39C63; -fx-border-color: BLACK; -fx-background-radius: 15; -fx-border-radius: 15;" text="Напитки" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font size="23.0" />
+               </font></Button>
          </children></AnchorPane>
       <Label layoutX="240.0" layoutY="2.0" text="Ratatuy" textFill="WHITE">
          <font>
             <Font name="Georgia Bold" size="56.0" />
          </font>
       </Label>
-      <Button fx:id="exit" layoutX="566.0" layoutY="19.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="110.0" style="-fx-background-color: #F39C63;" text="Выход" textAlignment="CENTER" textFill="#f8f7f7" textOverrun="CLIP" wrapText="true">
-         <font>
-            <Font name="Book Antiqua Bold" size="23.0" />
-         </font>
-      </Button>
    </children>
 </AnchorPane>
